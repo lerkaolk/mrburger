@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Gagalin-Regular';
+    src: url("../fonts/gagalin-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Lifehack-Medium';
+    src: url("../fonts/lifehack_medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("../fonts/ubuntu-light-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("../fonts/ubuntu-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal; }
+  
+  html,
+  body {
+    height: 100%; }
+  
+  body {
+    font-size: 16px;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #2f3234; }
+  
+  .container {
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 960px;
+    min-height: 100%;
+    overflow: hidden; }
+  
+    .pagination {
+      position: fixed;
+      top: 100px;
+      right: 50px;
+    }
+    .pagination__list {
+      flex-direction: column;
+    }
+    .pagination__item {
+      margin-left: 0;
+      margin-bottom: 5px;
+    }
+    .pagination__item:before {
+      display: none;
+    }
+    .pagination .active .pagination__link {
+      border-color: #fff;
+    }
+    .pagination__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+    }
+    .pagination__link::before {
+      content: "";
+      display: flex;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  
+  .section {
+    min-height: 650px; }
+    .section_centered {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  
+  .section-title {
+    font-size: 72px;
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    color: #f9b43b;
+    margin-bottom: 40px; }
+    .section-title_color_black {
+      color: #2f3234; }
+    .section-title_position_center {
+      text-align: center; }
+  
+  .button {
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background: #e35028;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  margin-left:15px; }
+  
+  .hero {
+    background: url("../img/video-bg.png") center center no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  
+  .header {
+    padding-top:12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  
+  .header__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto; }
+  
+  .hero__container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  
+  .hero__content {
+    -webkit-box-flex: .8;
+    -ms-flex: .8;
+    flex: .8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  
+  .hero__text {
+    color: #fff; }
+  
+  .hero__desc {
+    font-family: "Lifehack-Medium", serif;
+    letter-spacing: -5.63px;
+    line-height: 60px;
+    font-size: 72px;
+    text-transform: lowercase;
+  } 
+  
+  .arrow-down {
+    display:flex;
+    justify-content: center;
+    margin-bottom:41px;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  
+  .nav__item:last-child .nav__link:after {
+    display: none; }
+  
+  .nav__link {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .nav__link:after {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 16px; }
+  
+  .hero__pic {
+    width: 50%; }
+  
+  .hero__text {
+    width: 50%; }
+  .section-best {
+    background: url("../img/best-bg.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 134px 0 155px;
+  }
+  .section-title__best {
+    font-family: "Gagalin-Regular";
+    color: #2f3234;
+    font-size: 72px;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  .best__list {
+    display:flex;
+    justify-content: space-between
+  }
+  .best__item {
+    flex: 1;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .best-img {
+    margin-bottom: 28px;
+  }
+  .best-title {
+    color: #2f3234;
+    font-family: Lifehack;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.14px;
+    /* Text style for "100% свеже" */
+    letter-spacing: -0.6px;
+    margin-bottom: 14px;
+  }
+  .best-desc {
+    opacity: 0.8;
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .review {
+    
+  }
+  .reviews__list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reviews__item {
+    width: 25%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .review_name {
+    padding-top: 50px;
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .review_text {
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .reviews_button {
+    margin-left: 0;
+    background-color: #2f3234;
+  }
+  .reviews__hover {
+    background-color: rgba(20, 20, 20, 0.7);
+    height: 100%;
+    flex-direction: column;
+    display: none;
+    padding:0 20px 0 33px;
+  }
+  
+  .reviews__item:hover .reviews__hover {
+    display: flex;
+  }

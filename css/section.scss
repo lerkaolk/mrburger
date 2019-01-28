@@ -1,0 +1,30 @@
+.section {
+  min-height: 650px;
+ 
+ &_centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; 
+  }
+
+  &-title {
+  font-size: 72px;
+  @include gagalin;
+  color:$yellow;
+  margin-bottom: 40px; 
+}
+  
+ &-title_color_black {
+    color:$black; 
+  }
+  &-title_position_center {
+    text-align: center; 
+  }
+}

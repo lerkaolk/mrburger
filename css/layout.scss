@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%; }
+
+  body {
+    font-size: 16px;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    @include ubuntu($style: light);
+    color:$black; }
+  
+  .container {
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 960px;
+    min-height: 100%;
+    overflow: hidden; 
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}

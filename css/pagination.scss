@@ -1,0 +1,37 @@
+.pagination {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+  
+  &__list {
+    flex-direction: column;
+  }
+  &__item {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  &__item:before {
+    display: none;
+  }
+  & .active .pagination__link {
+    border-color: $beige;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+  }
+  &__link::before {
+    content: "";
+    display: flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $beige;
+  }
+}

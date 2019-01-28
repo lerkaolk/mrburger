@@ -1,0 +1,48 @@
+.reviews {
+
+}
+
+  .reviews__list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.reviews__item {
+  width: 25%;
+  height: 450px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &:hover .reviews__hover {
+    display: flex;
+  }
+
+}
+.reviews_name {
+  padding-top: 50px;
+  color:$white;
+  @include gagalin;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.reviews_text {
+  color:$white;
+ @include ubuntu(light);
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.reviews_button {
+  margin-left: 0;
+  background-color:$black;
+}
+.reviews__hover {
+  background-color: rgba(20, 20, 20, 0.7);
+  height: 100%;
+  flex-direction: column;
+  display: none;
+  padding:0 20px 0 33px;
+}

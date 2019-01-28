@@ -1,0 +1,21 @@
+.button {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background:$red;
+    color:$white;
+    font-size: 13px;
+    @include ubuntu(medium);
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left:15px; 
+  }
+  
+  
+  
+  .arrow-down {
+    display:flex;
+    justify-content: center;
+    margin-bottom:41px;
+  }
+  

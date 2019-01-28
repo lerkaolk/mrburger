@@ -1,0 +1,41 @@
+.section-best {
+    background: url("../img/best-bg.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 134px 0 155px;
+  }
+  .section-title__best {
+   @include gagalin;
+    color: $black;
+    font-size: 72px;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  .best__list {
+    display:flex;
+    justify-content: space-between
+  }
+  .best__item {
+    flex: 1;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .best-img {
+    margin-bottom: 28px;
+  }
+  .best-title {
+    color:$black;
+    @include lifehack;
+    font-size: 24px;
+    line-height: 28.14px;
+    /* Text style for "100% свеже" */
+    letter-spacing: -0.6px;
+    margin-bottom: 14px;
+  }
+  .best-desc {
+    opacity: 0.8;
+    color: $black;
+    @include ubuntu(light);
+    font-size: 14px;
+    
+  }
+  
