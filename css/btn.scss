@@ -1,3 +1,11 @@
+.button__box{
+  margin-left:15px; 
+
+}
+
+
+
+
 .button {
     text-transform: uppercase;
     padding: 10px 15px;
@@ -7,15 +15,18 @@
     @include ubuntu(medium);
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
-    margin-left:15px; 
+    display: flex;
   }
   
   
-  
-  .arrow-down {
+  .arrow__container {
     display:flex;
     justify-content: center;
     margin-bottom:41px;
+  }
+ 
+ 
+  .arrow-down {
+    display:flex;
   }
   

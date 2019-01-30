@@ -1,7 +1,8 @@
 .section-best {
     background: url("../img/best-bg.jpg") center center no-repeat;
     background-size: cover;
-    padding: 134px 0 155px;
+    display: flex;
+    align-items: center;
   }
   .section-title__best {
    @include gagalin;

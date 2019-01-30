@@ -23,23 +23,25 @@
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center; }
+        align-items: center; 
+      
+      }
       
       &__text {
         color:$beige; 
       }
       
-      &__desc {
-        @include lifehack;
-        letter-spacing: -5.63px;
-        line-height: 60px;
-        font-size: 72px;
-        text-transform: lowercase;
-      } 
+      
 
       &__pic {
         width: 50%; }
+        &__pic-img{
+          border-style: none;
+        }
       
       &__text {
-        width: 50%; }
+        width: 50%; 
+        margin-left: 14px;
+        padding-top: 87px;
+      }
       }

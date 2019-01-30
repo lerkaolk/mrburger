@@ -1,5 +1,13 @@
 .section {
-  min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
  
  &_centered {
     display: -webkit-box;
@@ -18,8 +26,18 @@
   font-size: 72px;
   @include gagalin;
   color:$yellow;
-  margin-bottom: 40px; 
+  margin-bottom: 15px; 
 }
+
+.section-desc{
+ 
+    @include lifehack;
+    letter-spacing: -5.63px;
+    line-height: 60px;
+    font-size: 72px;
+    text-transform: lowercase;
+  } 
+
   
  &-title_color_black {
     color:$black; 
