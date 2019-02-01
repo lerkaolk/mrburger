@@ -45,6 +45,9 @@
   margin-left: 0;
   background-color:$black;
 }
+.reviews_button:hover {
+  background-color:$blackhover;
+}
 .reviews__hover {
   background-color: rgba(20, 20, 20, 0.7);
   height: 100%;
@@ -52,6 +55,6 @@
   display: none;
   padding: 20px;
   justify-content: center;
-
+  box-sizing: border-box
   
 }

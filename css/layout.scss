@@ -12,6 +12,11 @@ body {
     @include ubuntu($style: light);
     color:$black; 
   }
+    
+  ul {
+    padding:0;
+    margin: 0;
+  }
 
     .wrapper {
       position: relative;
@@ -21,16 +26,9 @@ body {
   }
     
   
-    .main{
+    .maincontent {
       height:100%;
-      
     }
-    
-    ul {
-      padding:0;
-      margin: 0;
-    }
-  
   .container {
     margin: 0 auto;
     position: relative;
@@ -51,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0; 
   font-weight: normal;
 }
 
