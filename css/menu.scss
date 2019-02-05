@@ -1,0 +1,108 @@
+.section-menu {
+    background: url("../img/menu.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+&__title{
+    position: absolute;
+    top: 116px;
+    left:109px;
+}
+&__title-menu{
+    width: 174px;
+    height: 51px;
+    color: $white;
+    @include gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 64px;
+}
+
+.menu-accordeon{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    height:100%;
+    width: 70%;
+}
+
+.menu__list{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    display: flex;
+
+    &--active .menu__title {
+        color:$yellow;
+    }
+    &--active .menu__desc-wrap {
+        width: 540px;
+        
+        background:rgba(47, 50, 52, 0.93);
+        padding:60px 35px;
+    }
+}
+.menu__choice{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    justify-content: center;
+    position: relative;
+
+    &::before{
+        content:"";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(20, 20, 20, 0.7);
+        position: absolute;
+        top: 0;
+        left:0;
+    }
+}
+.menu__title{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    color:$white;
+    font-family: Gagalin;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom:40px;
+}
+
+.menu__desc-wrap {
+    width:0;
+    overflow: hidden;
+}
+.menu__text {
+    color: $white;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+

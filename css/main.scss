@@ -5,6 +5,7 @@ $blackhover: #1f2122;
 $red: #e35028;
 $white: #ffffff;
 $beige:#fff;
+$gray: #d1cfcb;
 
 
 
@@ -18,4 +19,10 @@ $beige:#fff;
 @import "normalize.scss";
 @import "pagination.scss";
 @import "review.scss";
+@import "team.scss";
+@import "menu.scss";
+@import "map.scss";
+@import "form.scss";
+
+
 

@@ -1,0 +1,59 @@
+.section-map {
+    background: url("../img/map.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 60px;
+    width: 100%;
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    &__container{
+        height: 60px;
+        color:$black;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__col{
+        display: flex;
+        width: 50%;
+    }
+}
+
+.footer__col--right{
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content:flex-end
+
+}
+
+.contacts {
+    font-style: normal;
+
+    &__address{
+        color:$white;
+        @include ubuntu;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.42;
+        font-style: normal;
+    }
+
+    &__phone{
+        color: $red;
+        @include ubuntu(bold);
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
