@@ -1,5 +1,5 @@
 .section {
-  min-height: 650px; }
+  min-height: rem(650px); }
 
 .section_centered {
   display: -webkit-box;
@@ -14,10 +14,10 @@
   justify-content: center; }
 
 .section-title {
-  font-size: 72px;
+  font-size: rem(72px);
   font-family: 'Gagalin';
   color: #f9b43b;
-  margin-bottom: 40px; }
+  margin-bottom: rem(40px); }
 
 .section-title_color_black {
   color: #2f3234; }

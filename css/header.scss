@@ -18,14 +18,26 @@
     align-items: center;
      
   }
-  }
+}
 
-.nav__list {
+.logo {
+  &__icon {
+    width: 5.75rem;
+    height: 4.3125rem;
+  }
+}
+
+.nav {
+  &__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; 
   }
 
+  @include tablets() {
+    display: none;
+  }
+}
     .nav__item{
       display: flex;
       align-items: center;
@@ -64,5 +76,26 @@
     -ms-flex-align: center;
     align-items: center; 
 }
-    
-    
+
+.hamburger-menu {
+  &__link {
+    margin-left:rem(30px);
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    @include tablets() {
+      display: flex;
+    }
+  }
+
+  &__item {
+    width: rem(24px);
+    height: rem(4px);
+    background-color: $white;
+    border-radius: rem(5px);
+    margin-bottom: rem(5px);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

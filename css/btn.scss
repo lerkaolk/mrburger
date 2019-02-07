@@ -1,32 +1,33 @@
-.button__box{
-  margin-left:15px; 
+.button {
+  text-transform: uppercase;
+  padding: rem(10px) rem(15px);
+  background:$red;
+  color:$white;
+  font-size: rem(13px);
+  @include ubuntu(medium);
+  text-decoration: none;
+  border-radius: rem(5px);
+  display: flex;
 
+  &__box {
+    margin-left:rem(15px); 
+  }
 }
 
-
-
-
-.button {
-    text-transform: uppercase;
-    padding: 10px 15px;
-    background:$red;
-    color:$white;
-    font-size: 13px;
-    @include ubuntu(medium);
-    text-decoration: none;
-    border-radius: 5px;
-    display: flex;
-  }
-  
-  
-  .arrow__container {
+.arrow {
+  &__container {
     display:flex;
     justify-content: center;
-    margin-bottom:41px;
+    margin-bottom:rem(41px);
   }
- 
- 
-  .arrow-down {
+
+  &-down {
     display:flex;
-  }
   
+    &__icon {
+      fill: $white;
+      width: rem(29px);
+      height: rem(14px);
+    }
+  }
+}

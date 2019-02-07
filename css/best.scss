@@ -7,36 +7,69 @@
   .section-title__best {
    @include gagalin;
     color: $black;
-    font-size: 72px;
-    margin-bottom: 55px;
+    font-size: rem(72px);
+    margin-bottom: rem(55px);
     text-align: center;
   }
   .best__list {
     display:flex;
-    justify-content: space-between
+    justify-content: space-between;
+
+    @include phones() {
+      flex-direction: column;
+    }
   }
   .best__item {
     flex: 1;
-    padding: 0 15px;
+    padding: 0 rem(15px);
     text-align: center;
+
+    @include phones() {
+      display: flex;
+      text-align: left;
+    }
   }
   .best-img {
-    margin-bottom: 28px;
+    margin-bottom: rem(28px);
+
+    @include phones() {
+      margin-right: rem(30px);
+      min-width: 22%;
+    }
+
+    &__icon {
+      &--meat {
+        fill:$orange;
+        width: rem(97px);
+        height: rem(89px);
+      }
+      &--hand {
+        fill:$yellow;
+        width: rem(73px);
+        height: rem(85px);
+      }
+      &--natural {
+        fill:$green;
+        width: rem(88px);
+        height: rem(75px);
+      }
+
+    }
   }
   .best-title {
     color:$black;
     @include lifehack;
-    font-size: 24px;
-    line-height: 28.14px;
+    font-size: rem(24px);
+    line-height: rem(28px);
     /* Text style for "100% свеже" */
-    letter-spacing: -0.6px;
-    margin-bottom: 14px;
+    letter-spacing: rem(-0.6px);
+    margin-bottom: rem(14px);
   }
   .best-desc {
     opacity: 0.8;
     color: $black;
     @include ubuntu(light);
-    font-size: 14px;
+    font-size: rem(14px);
     
   }
   

@@ -9,26 +9,26 @@
 
 .reviews__item {
   width: 25%;
-  height: 450px;
+  height: rem(450px);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
 
 .review_name {
-  padding-top: 50px;
+  padding-top: rem(50px);
   color: #ffffff;
   font-family: Gagalin;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
-  margin-bottom: 30px; }
+  margin-bottom: rem(30px); }
 
 .review_text {
   color: #ffffff;
   font-family: 'Ubuntu';
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24px;
-  margin-bottom: 30px; }
+  line-height: rem(24px);
+  margin-bottom: rem(30px); }
 
 .reviews_button {
   margin-left: 0;
@@ -42,7 +42,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   display: none;
-  padding: 0 20px 0 33px; }
+  padding: 0 rem(20px) 0 rem(33px); }
 
 .reviews__item:hover .reviews__hover {
   display: -webkit-box;

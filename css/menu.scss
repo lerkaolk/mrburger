@@ -5,17 +5,17 @@
 
 &__title{
     position: absolute;
-    top: 116px;
-    left:109px;
+    top: rem(116px);
+    left:rem(109px);
 }
 &__title-menu{
-    width: 174px;
-    height: 51px;
+    width: rem(174px);
+    height: rem(51px);
     color: $white;
     @include gagalin;
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
-    line-height: 64px;
+    line-height: rem(64px);
 }
 
 .menu-accordeon{
@@ -40,10 +40,10 @@
         color:$yellow;
     }
     &--active .menu__desc-wrap {
-        width: 540px;
+        width: rem(540px);
         
         background:rgba(47, 50, 52, 0.93);
-        padding:60px 35px;
+        padding:rem(60px) rem(35px);
     }
 }
 .menu__choice{
@@ -53,7 +53,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 80px;
+    width: rem(80px);
     justify-content: center;
     position: relative;
 
@@ -72,9 +72,9 @@
     transform:rotate(180deg);
     color:$white;
     font-family: Gagalin;
-    font-size: 40px;
+    font-size: rem(40px);
     font-weight: 400;
-    margin-bottom:40px;
+    margin-bottom:rem(40px);
 }
 
 .menu__desc-wrap {
@@ -84,9 +84,9 @@
 .menu__text {
     color: $white;
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
 }
 
 

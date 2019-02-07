@@ -1,60 +1,78 @@
 .reviews {
-
-}
-.reviews__wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-  .reviews__list {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-.reviews__item {
-  width: 25%;
-  height: 50%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  &:hover .reviews__hover {
+  &__wrap{
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 25%;
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &:hover .reviews__hover {
+      display: flex;
+  
+    }
 
+    @include tablets() {
+      width: 50%;
+      height: 25%;
+    }
+  }
+  &__name {
+    color:$white;
+    @include gagalin;
+    font-size: rem(14px);
+    font-weight: 400;
+    margin-bottom: rem(30px);
+
+    @include tablets() {
+      margin: 0 auto 20px;
+    }
+
+    @include phones() {
+      font-size:rem(24px);
+    }
+  }
+  &__text {
+    color:$white;
+   @include ubuntu(light);
+    font-size: rem(14px);
+    line-height: rem(24px);
+    margin-bottom: rem(30px);
+    @include tablets() {
+      text-align: center;
+    }
+    @include phones() {
+      display: none;
+    }
   }
 
-}
-.reviews__name {
-  color:$white;
-  @include gagalin;
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-.reviews__text {
-  color:$white;
- @include ubuntu(light);
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 30px;
-  max-width: 225pxs
-}
-.reviews_button {
-  margin-left: 0;
-  background-color:$black;
-}
-.reviews_button:hover {
-  background-color:$blackhover;
-}
-.reviews__hover {
-  background-color: rgba(20, 20, 20, 0.7);
-  height: 100%;
-  flex-direction: column;
-  display: none;
-  padding: 20px;
-  justify-content: center;
-  box-sizing: border-box
-  
+  &__hover {
+    background-color: rgba(20, 20, 20, 0.7);
+    height: 100%;
+    flex-direction: column;
+    display: none;
+    padding: rem(20px);
+    justify-content: center;
+    box-sizing: border-box
+    
+  }
+
+  &__button {
+    margin-left: 0;
+    background-color:$black;
+    margin: 0 auto;
+  }
+  &__button:hover {
+    background-color:$blackhover;
+  }
+
 }

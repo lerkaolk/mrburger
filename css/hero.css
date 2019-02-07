@@ -30,9 +30,9 @@
 
 .hero__desc {
   font-family: "Lifehack-Medium", serif;
-  letter-spacing: -5.63px;
-  line-height: 60px;
-  font-size: 72px;
+  letter-spacing: -5.rem(63px);
+  line-height: rem(60px);
+  font-size: rem(72px);
   text-transform: lowercase; }
 
 .hero__pic {

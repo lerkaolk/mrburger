@@ -6,9 +6,11 @@ $red: #e35028;
 $white: #ffffff;
 $beige:#fff;
 $gray: #d1cfcb;
+$green: #8ac03e;
+$tablets: 768px;
+$phones: 480px;
 
-
-
+@import "media.scss";
 @import "fonts.scss";
 @import "layout.scss";
 @import "section.scss";
