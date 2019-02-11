@@ -5,11 +5,8 @@
     align-items: center;
   }
   .section-title__best {
-   @include gagalin;
     color: $black;
-    font-size: rem(72px);
     margin-bottom: rem(55px);
-    text-align: center;
   }
   .best__list {
     display:flex;

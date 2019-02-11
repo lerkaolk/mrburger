@@ -38,6 +38,7 @@
     }
 
     @include phones() {
+      text-align: center;
       font-size:rem(24px);
     }
   }
@@ -66,10 +67,39 @@
     
   }
 
+  &__buttons {
+    &:first-child &__button {
+      display:none;
+    }
+    &:last-child &__button {
+      display: none;
+
+      @include phones() {
+        display:flex;
+      }
+    }
+  }
+
   &__button {
     margin-left: 0;
     background-color:$black;
     margin: 0 auto;
+
+    &--desktop {
+      @include phones() {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include phones() {
+        display: flex;
+      }
+
+    }
+    
   }
   &__button:hover {
     background-color:$blackhover;

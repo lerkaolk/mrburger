@@ -19,13 +19,13 @@
     &__box{
         padding-top: rem(113px);
         padding-left: rem(97px);
+
+        @include phones() {
+            padding-left: 0;
+        }
     }
 
     &__title {
-        color: $yellow;
-        @include gagalin;
-        font-size: rem(72px);
-        font-weight: 400;
         margin-bottom: rem(35px);
 
         @include tablets() {
@@ -50,7 +50,7 @@
             }
         }
     
-        &--active .team-accordeon__member-name {
+        &--active .team-accordeon__view {
             color: $yellow;
             @include tablets() {
                 justify-content: center;
@@ -67,7 +67,7 @@
         flex-direction: column;
     }
 
-    &__member-name {
+    &__view {
         color: $white;
         @include gagalin;
         font-size: rem(14px);
@@ -81,7 +81,7 @@
         }
     } 
     
-    &__member-name::before {
+    &__view::before {
         content: "";
         border-top: rem(7px) solid $yellow;
         border-bottom: rem(0px) solid transparent;

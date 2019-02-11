@@ -32,9 +32,9 @@
 
     &__col{
         display: flex;
-        width: 50%;
 
         @include phones() {
+            width: 50%;
             text-align: center;
             justify-content: center;
             margin-bottom: rem(20px);

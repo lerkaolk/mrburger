@@ -24,10 +24,29 @@
   }
 
   &-title {
-  font-size: rem(72px);
-  @include gagalin;
-  color:$yellow;
-  margin-bottom: rem(15px); 
+    font-size: rem(72px);
+    @include gagalin;
+    color:$yellow;
+    margin-bottom: rem(15px); 
+
+    &__white {
+      color:$white;
+    }
+
+    &__center {
+      text-align: center;
+    }
+  }
+
+
+  &-title_color_black {
+    color:$black; 
+  }
+  &-title_position_center {
+    text-align: center; 
+  }
+
+
 }
 
 .section-desc{
@@ -43,10 +62,3 @@
     margin-top:rem(87px)
   }
   
- &-title_color_black {
-    color:$black; 
-  }
-  &-title_position_center {
-    text-align: center; 
-  }
-}
