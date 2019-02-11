@@ -2,7 +2,11 @@
     position: fixed;
     top: rem(100px);
     right: rem(50px);
-  
+
+    @include phones() {
+      display: none;
+    }
+
   &__list {
     flex-direction: column;
   }

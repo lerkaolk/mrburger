@@ -7,10 +7,13 @@
     position: absolute;
     top: rem(116px);
     left:rem(109px);
+
+    @include phones() {
+        top: rem(30px);
+        left: rem(30px);
+    }
 }
 &__title-menu{
-    width: rem(174px);
-    height: rem(51px);
     color: $white;
     @include gagalin;
     font-size: rem(72px);
@@ -41,7 +44,7 @@
     }
     &--active .menu__desc-wrap {
         width: rem(540px);
-        
+
         background:rgba(47, 50, 52, 0.93);
         padding:rem(60px) rem(35px);
     }
@@ -71,7 +74,7 @@
     writing-mode:vertical-rl;
     transform:rotate(180deg);
     color:$white;
-    font-family: Gagalin;
+    @include gagalin;
     font-size: rem(40px);
     font-weight: 400;
     margin-bottom:rem(40px);
