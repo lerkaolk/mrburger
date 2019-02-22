@@ -1,6 +1,7 @@
 
 .phone-menu {
     display: none;
+    position: fixed;
 
     @include tablets() {
         background: rgba(47, 50, 52, 0.99);

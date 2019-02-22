@@ -10,10 +10,17 @@ $green: #8ac03e;
 $tablets: 768px;
 $phones: 480px;
 
+
 @import "media.scss";
 @import "fonts.scss";
 @import "layout.scss";
 @import "section.scss";
+
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import "owl.scss";
+@import "jquery.fancybox.css";
+
 @import "best.scss";
 @import "btn.scss";
 @import "header.scss";

@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     &:hover .reviews__hover {
       display: flex;
-  
+
     }
 
     @include tablets() {
@@ -64,7 +64,7 @@
     padding: rem(20px);
     justify-content: center;
     box-sizing: border-box
-    
+
   }
 
   &__buttons {
@@ -99,10 +99,49 @@
       }
 
     }
-    
+
   }
   &__button:hover {
     background-color:$blackhover;
   }
 
+
+
+  &-popup {
+    display: none;
+    width: 50%;
+    border-radius: 5px;
+
+    @include phones() {
+      width: 95%;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .reviews__text {
+      color: $black;
+
+      @include phones() {
+        display: inherit;
+      }
+    }
+
+    &__title {
+      @include gagalin();
+      font-size: 0.875rem;
+      color: $black;
+      margin-bottom: 1.5625rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .close__link {
+    display: block;
+    outline: none;
+  }
+
+}
+.fancybox-close-small {
+  display: none;
 }

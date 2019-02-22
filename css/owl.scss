@@ -1,0 +1,29 @@
+.owl {
+  &-prev {
+      font-size: rem(32px);
+      float: left;
+      margin: rem(-178px) 0 0 rem(-16px);
+      color: $white;
+
+      @include tablets() {
+        margin: rem(-290px) 0 0 rem(100px);
+      }
+  }
+
+  &-next {
+    font-size: 32px;
+    float: right;
+    margin: rem(-178px) rem(-25px) 0 0;
+    color: $white;
+
+    @include tablets() {
+      margin: rem(-290px) rem(45px) 0 0px;
+    }
+  }
+
+  &-stage {
+    margin-left: rem(28px);
+    margin-top: rem(30px);
+  }
+
+}

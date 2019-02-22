@@ -98,6 +98,7 @@
 .menu__desc-wrap {
     width:0;
     overflow: hidden;
+    transition:all 0.1s ease;
 }
 .menu__text {
     color: $white;

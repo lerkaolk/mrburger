@@ -1,23 +1,125 @@
-const hamburgerMenu = document.querySelector('#hamburger-menu'),
-    mobileMenu = document.querySelector('#phone-menu'),
-    closeMenu = document.querySelector('#close-menu');
+$(document).ready(function () {
 
-hamburgerMenu.addEventListener('click', function(e) {
-    e.preventDefault();
-    mobileMenu.style.display = "block";
-})
-closeMenu.addEventListener('click', function(e) {
-    e.preventDefault();
-    mobileMenu.style.display = "none";
-})
+    'use strict'
 
-// console.log(hamburgerMenu);
+    /**
+     * Phone Menu
+     */
+    const hamburgerMenu = $('#hamburger-menu'),
+    mobileMenu = $('#phone-menu'),
+    closeMenu = $('#close-menu');
 
-// for (var i = 0 ; i < hamburgerMenu.length; i++) {
-//     hamburgerMenu[i].addEventListener('click', function(event) {
-//         event.preventDefault();
-//         for (var m = 0 ; m < mobileMenu.length; m++) {
-//             mobileMenu[m].style.display = "block";
-//         }
-//     })
-// }
+    hamburgerMenu.on('click', function (e) {
+        e.preventDefault()
+        mobileMenu.fadeIn();
+
+    });
+
+    closeMenu.on('click', function (e) {
+        e.preventDefault()
+        mobileMenu.fadeOut();
+
+    });
+
+    /**
+     * Burger slider
+     */
+	$(".owl-carousel").owlCarousel({
+		responsive: {
+			0: {
+				items: 1,
+				nav: true
+			}
+		}
+    });
+
+    /**
+     * Burger slider ingredients
+     */
+    $('.ingredients').hover(function () {
+		$('.composition').slideToggle(300);
+    });
+
+
+    /**
+     * Team Section
+     */
+    $('.team-accordeon__view').on('click', function (e) {
+        e.preventDefault();
+
+        var name = $(this),
+            item = name.parent(),
+            items = $('.team-accordeon__item'),
+            content = item.find('.team-accordeon__content'),
+            otherContent = $('.team-accordeon__content');
+
+        if (!item.hasClass('team-accordeon__item--active')) {
+            items.removeClass('team-accordeon__item--active');
+            item.addClass('team-accordeon__item--active');
+
+            otherContent.css({
+                'height': 0,
+                'animation': 'slideUp .3s'
+            })
+
+            content.css({
+                'height': '100%',
+                'animation': 'slideDown .3s'
+            })
+        } else {
+            item.removeClass('team-accordeon__item--active')
+            content.css({
+                'height': 0,
+                'animation': 'slideUp .3s'
+            })
+        }
+
+
+    });
+
+    /**
+     * Accordeon Menu
+     */
+    $('.menu__item').on('click', function (e) {
+		e.preventDefault()
+
+		let item = $(this),
+			item_content = item.find('.menu__desc-wrap'),
+			items = $('.menu__item.menu__item--active');
+
+		if (!item.hasClass('menu__item--active')) {
+			items.removeClass('menu__item--active');
+			item.addClass('menu__item--active');
+
+			$('.menu__desc-wrap').css({
+				'width': 0
+			})
+
+			item_content.css({
+				'width': '20rem'
+			})
+		} else {
+			item.removeClass('menu__item--active')
+			item_content.css({
+				'width': 0
+			})
+		}
+    });
+
+    /**
+     * Reviews
+     */
+    $('.reviews__button').fancybox();
+	$('.close__link').on('click', function (e) {
+		e.preventDefault()
+
+		$.fancybox.close();
+    });
+
+    /**
+     * Contact form
+     */
+    $("#send-mail").on("submit", function() {
+        
+    });
+});
