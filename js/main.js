@@ -119,7 +119,33 @@ $(document).ready(function () {
     /**
      * Contact form
      */
-    $("#send-mail").on("submit", function() {
-        
+    $("#send-mail").on("submit", function(e) {
+		e.preventDefault()
+        let form = $(this),
+            url = form.attr("action"),
+            data = form.serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: data,
+            dataType: 'JSON'
+        }).done(function(msg) {
+            let mes = msg.mes,
+            status = msg.status;
+            if (status === 'OK') {
+                $("#form-popup p").text("Ok.");
+                form[0].reset();
+            } else {
+                $("#form-popup p").text(mes);
+                form[0].reset();
+            }
+
+            $("#form-popup").fancybox().trigger('click');
+        }).fail( function(jqXHR, textStatus) {
+            $("#form-popup p").text("Request failed: " + textStatus);
+            $("#form-popup").fancybox().trigger('click');
+            form[0].reset();
+        });
     });
 });
